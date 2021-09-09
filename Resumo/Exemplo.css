@@ -1,0 +1,20 @@
+img {
+
+    width: 850;
+    height: 600;
+
+
+    max-width: 850;
+    max-height: 600;
+
+    border: 20px outset rgb(255, 255, 255);
+
+
+
+
+    max-width: 850px; /* mexe sem alterar a proporção */
+
+
+    border-radius: 10%; /* arredonda as bordas da imagem */
+
+}
