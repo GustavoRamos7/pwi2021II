@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Javascript</title>
+
+        <h1>Javascript início</h1>
+</head>
+<body>
+
+<ul>
+        <li> Um primeiro exemplo do o que o Javascript é capaz de fazer </li> 
+
+    </ul>
+<p id="teste1">Sorteio</p>
+
+<button type="button"
+onclick='document.getElementById("teste1").innerHTML =
+"Baixando vírus"'>
+Baixar antivírus
+
+</button>
+
+    
+    <button
+        type="button"
+        onclick='alert("Computador infectado, clique no primeiro botão para instalar o antivírus e eliminar o hospedeiro")'
+    >
+    Clique aqui para ganhar R$1.0000.000,00 em prêmios
+    </button>
+
+    <h2>Desafio</h2>
+
+<ul>
+
+<Li>Segundo exemplo sobre o que o Javascript</Li>
+
+</ul>
+
+<p>Nesse segundo exemplo, podemos ver que o Javascript muda o valor do atriburo da imagem.</p>
+
+
+
+<img class="bulb" src="https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/412/original/pic_bulboff.gif"> 
+
+<button class="btn" onclick="toggleLight(1)">Ligar e Desligar</button>
+
+
+
+<script>
+//       document.querySelectorAll('[light-bulb]').forEach(function (elm) {
+//         elm.addEventListener('click', toggleLight)
+//       })
+      function toggleLight(n) {
+        var index = n-1
+        var bulb = document.getElementsByClassName('bulb')[index]
+        var button = document.getElementsByClassName('btn')[index]
+        // check if light is on or off
+        var isLightOn = bulb.src == 'https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/413/original/pic_bulbon.gif'
+        // if light is on
+        if (isLightOn) {
+          // turn it off
+          bulb.src='https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/412/original/pic_bulboff.gif'
+          button.innerHTML = "Ligar "
+        } else { // if light is off
+          // turn it on
+          bulb.src='https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/413/original/pic_bulbon.gif'
+          button.innerHTML = "Desligar "
+        }
+        
+      }
+    </script>
+
+<h2>Javascript muda elementos em HTML</h2>
+
+<ul>
+
+<li><p id="exemplo3">O Javascript também pode mudar um estilo de um elemento HMTL</p></li>
+
+</ul>
+
+<button type="button" onclick="document.getElementById('exemplo3').style.fontSize='35px'">Clique aqui!</button>
+
+
+<ul>
+<li><p id="demo">Javascript também oculta elementos HTML.</p></li>
+</ul>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Clique aqui!</button>
+
+
+</body>
+</html>
